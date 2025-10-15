@@ -1,0 +1,91 @@
+body {
+  background: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid #6bb64a;
+  padding: 10px 20px;
+  background: #ffffff;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.header-text h3 {
+  color: #026b28;
+  margin: 0;
+}
+
+.header-text p {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 3px 0;
+}
+
+.header-text span {
+  color: #006400;
+  font-size: 13px;
+}
+
+.form-container {
+  margin: 30px auto;
+  width: 480px;
+  border: 1px solid #aaa;
+  padding: 25px;
+  background: #fdfdfd;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 6px;
+  font-size: 15px;
+}
+
+input, select {
+  width: 220px;
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 5px 12px;
+  background: #006600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background: #009900;
+}
+
+.footer {
+  text-align: center;
+  border-top: 4px solid #6bb64a;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #333;
+}
+
+.footer img {
+  width: 80px;
+  vertical-align: middle;
+}

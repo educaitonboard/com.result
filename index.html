@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education Board Bangladesh</title>
+<style>
+/* Base */
+body {
+  background: #e5e5e5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.main-box {
+  max-width: 700px;
+  width: 95%;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(90deg, #007e33, #00994d);
+  color: white;
+  padding: 12px 18px;
+  flex-wrap: wrap;
+}
+.header img {
+  width: 70px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px 0;
+  flex: 0 0 auto;
+}
+.header-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.header-text h2 { margin: 0; font-size: 20px; }
+.header-text p { margin: 3px 0; font-size: 14px; font-weight: bold; }
+.header-text span { font-size: 12px; color: #c8e6c9; }
+
+/* Form container */
+.form-container {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 22px;
+  margin: 20px auto;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+/* Form rows as flexible pairs */
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: nowrap;
+}
+.form-group label {
+  flex: 0 0 150px;
+  font-weight: bold;
+  color: #000;
+  min-width: 90px;
+}
+.form-group input,
+.form-group select {
+  flex: 1 1 auto;
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  min-width: 0; /* for flex overflow on small screens */
+}
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #00994d;
+  box-shadow: 0 0 4px rgba(102,187,106,0.25);
+}
+
+/* Buttons and footer */
+.buttons {
+  text-align: center;
+  margin-top: 12px;
+}
+button {
+  background: #007e33;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  margin: 6px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+button:hover { background: #00994d; }
+
+.footer {
+  border-top: 4px solid #66bb6a;
+  text-align: center;
+  padding: 12px 8px;
+  font-size: 13px;
+  color: #333;
+}
+.footer img { width: 85px; vertical-align: middle; margin-left: 6px; }
+
+/* Responsive: stack label + input vertically on small screens */
+@media (max-width: 640px) {
+  .header { padding: 12px; }
+  .header img { width: 60px; }
+  .header-text h2 { font-size: 18px; }
+  .header-text p { font-size: 13px; }
+
+  .form-container { padding: 16px; width: 94%; }
+
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form-group label {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+  .form-group input, .form-group select {
+    width: 100%;
+  }
+
+  .buttons { display: flex; gap: 8px; justify-content: center; flex-wrap:wrap; }
+  button { flex: 0 0 auto; width: auto; padding: 10px 16px; }
+
+  .main-box { margin: 16px auto; }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .header img { width: 54px; }
+  .header-text h2 { font-size: 16px; }
+  .form-container { padding: 12px; }
+  .form-group label { font-size: 13px; }
+  button { padding: 8px 12px; font-size: 13px; }
+}
+</style>
+</head>
+<body>
+
+<div class="main-box">
+  <div class="header">
+    <img src="./iamges/image 2.jpg" alt="logo">
+    <div class="header-text">
+      <h2>Ministry of Education</h2>
+      <p>Intermediate and Secondary Education Boards Bangladesh</p>
+      <span>Official Website of Education Board</span>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <form id="resultForm">
+      <div class="form-group">
+        <label>Examination :</label>
+        <select>
+          <option>HSC/Alim</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Year :</label>
+        <select>
+          <option>2025</option>
+          <option>2024</option>
+          <option>2023</option>
+          <option>2022</option>
+          <option>2021</option>
+          <option>2020</option>
+          <option>2019</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Board :</label>
+        <select>
+          <option>Chittagong</option>
+          <option>Dhaka</option>
+          <option>Rangpur</option>
+          <option>Sylet</option>
+          <option>Kulna</option>
+          <option>Rajshahi</option>
+          <option>Bogura</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Roll :</label>
+        <input type="text" id="roll" placeholder="Enter Roll Number" required>
+      </div>
+
+      <div class="form-group">
+        <label>Reg. No :</label>
+        <input type="text" id="reg" placeholder="Enter Registration Number" required>
+      </div>
+
+      <div class="form-group">
+        <label>3 + 3 = </label>
+        <input type="text" id="captcha" placeholder="Answer" required>
+      </div>
+
+      <div class="buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="footer">
+    ©2005-2025 Ministry of Education, All rights reserved.<br>
+    Powered by <img src="iamges/iamge 1.jpg" alt="Teletalk">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
